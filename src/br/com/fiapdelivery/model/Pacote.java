@@ -1,0 +1,10 @@
+package br.com.fiapdelivery.model;
+
+public class Pacote {
+	public String cod;
+	public double p;
+	public String s;
+	public void muda(String x) {
+	s = x;
+	}
+}
