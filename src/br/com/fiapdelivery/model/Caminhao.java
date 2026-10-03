@@ -1,10 +1,10 @@
 package br.com.fiapdelivery.model;
 
-public class Caminhao {
+public class Caminhao extends Veiculo {
+ private int quantidadeEixos;
 
-		public String pl;
-		public double cap;
-		public int eixos;
-		}
-
-
+ public Caminhao(String placa, double quantidadeTanque, int quantidadeEixos) {
+     super(placa, quantidadeTanque); 
+     this.quantidadeEixos = quantidadeEixos;
+ }
+}

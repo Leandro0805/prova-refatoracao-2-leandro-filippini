@@ -1,10 +1,16 @@
 package br.com.fiapdelivery.model;
 
 public class Rota {
-	public pacote p1;
-	public caminhao c1;
-	public void vai() {
-	System.out.println("Levando pacote " + p1.cod + " no veiculo " + c1.pl);
-	}
+ private Pacote pacote;
+ private Veiculo veiculo;
 
+ public Rota(Pacote pacote, Veiculo veiculo) {
+     this.pacote = pacote;
+     this.veiculo = veiculo;
+ }
+
+ public void iniciarEntrega() {
+     System.out.println("Iniciando rota do pacote " + pacote.getCodigo() + 
+                        " com o veículo placa " + veiculo.getPlaca());
+ }
 }
